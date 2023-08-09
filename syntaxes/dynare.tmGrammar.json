@@ -1,0 +1,28 @@
+{
+  "name": "Dynare",
+  "scopeName": "source.dynare",
+  "fileTypes": ["mod"],
+  "patterns": [
+    {
+      "name": "keyword.control.dynare",
+      "match": "\\b(var|varexo|parameters|model|initval|shocks|stoch_simul|steady|check|end)\\b"
+    },
+    {
+      "name": "comment.dynare",
+      "begin": "//",
+      "end": "$"
+    }
+  ],
+  "repository": {
+    "main": {
+      "patterns": [
+        {
+          "include": "#keyword.control.dynare"
+        },
+        {
+          "include": "#comment.dynare"
+        }
+      ]
+    }
+  }
+}

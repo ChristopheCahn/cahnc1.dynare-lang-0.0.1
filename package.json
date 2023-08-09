@@ -1,0 +1,25 @@
+{
+  "name": "dynare-syntax-highlighting",
+  "displayName": "Dynare Syntax Highlighting",
+  "description": "Syntax highlighting for Dynare in VS Code",
+  "version": "0.0.1",
+  "publisher": "Christophe Cahn",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "language": "dynare",
+        "scopeName": "source.dynare",
+        "path": "./syntaxes/dynare.tmGrammar.json"
+      }
+    ],
+    "languages": [{
+      "id": "dynare",
+      "aliases": ["Dynare", "dynare"],
+      "extensions": [".mod"],
+      "configuration": "./dynare-language-configuration.json"
+    }]    
+  }
+}
